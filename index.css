@@ -3,16 +3,36 @@ body {
     height: 100%;
     margin: 0;
     padding: 0;
-    background-color: lightgreen;
+    background-image: url(img/web/bg.jpg);
+    background-position: center top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
 }
 
 header.profile {
-    width: 27%;
+    width: 30%;
     height: 100%;
     position: absolute;
     vertical-align: middle;
     text-align: center;
-    background-color: aqua;
+    overflow: hidden;
+}
+header.profile:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+header.profile::after {
+    background-image: url(img/web/bg.jpg);
+    background-position: center top;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 header.profile img {
@@ -23,15 +43,29 @@ header.profile img {
     border-radius: 90px;
 }
 
-header.profile h4,h5 {
-    line-height: 0px;
+section {
+    border-radius: 8px;
+    color: aliceblue;
+    background-color: rgba(0, 0, 0, .4);
 }
+
+header.profile p.title {
+    line-height: 0px;
+    font-size: 22px;
+    display: block;
+}
+
+header.profile p.title2 {
+    line-height: 0px;
+    font-size: 18px;
+}
+
+
 
 header.profile section.aboutMe {
     width: 80%;
 
     margin: 0 auto;
-    background-color: bisque;
 }
 
 .aboutMe span.links {
@@ -46,7 +80,6 @@ header.profile section.aboutMe {
     width: 20px;
     height: 20px;
     margin-left: -10px;
-    background-color: red;
 }
 
 .aboutMe p {
@@ -54,6 +87,7 @@ header.profile section.aboutMe {
 }
 
 header section.copyright {
+    width: 80%;
     position: absolute;
     bottom: 30px;
     margin: auto;
@@ -66,12 +100,35 @@ header section.copyright p {
 }
 
 div.posts {
-    width: 73%;
+    width: 70%;
     height: 100%;
     position: absolute;
     right: 0;
-    background-color: aquamarine;
+    overflow: hidden;
+    z-index: 1;
 }
+
+
+div.posts:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+div.posts::after {
+    background-image: url(img/web/bg.jpg);
+    background-position: center top;
+    background-size: cover;
+    background-attachment: fixed;
+    filter: blur(8px);
+    margin: -10px;
+}
+
+
 
 div.posts iframe {
     width: 100%;
