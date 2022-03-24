@@ -1,0 +1,42 @@
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 80px;
+    width: 1100px;
+    height: auto;
+}
+
+div.sonnet {
+    width: 500px;
+    margin-left: 100px;
+}
+
+div.sonnet h1 {
+    font-size: 28px;
+}
+
+div.sonnet p {
+    font-size: 20px;
+    line-height: 15px;
+}
+
+/*
+ Change the Font-Style later
+ */
+div.sonnet a {
+    color: black;
+    text-decoration: underline;
+}
+
+div.sonnet a:hover {
+    color: red;
+}
+
+div.sonnet p a {
+    text-decoration: none;
+}
+
+div.sonnet p a:hover {
+    color: red;
+    transition: all 0.2s;
+}

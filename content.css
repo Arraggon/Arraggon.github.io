@@ -1,0 +1,27 @@
+div.posts {
+    width: 90%;
+    height: 100%;
+    margin: 40px auto;
+}
+
+.postsArea {
+    background-color: rgba(182, 251, 255, .1);
+    border-radius: 10px;
+}
+
+div.posts article {
+    width: 61%;
+    height: auto;
+    margin-left: 5%;
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+
+div.posts article a{
+    text-decoration: none;
+    color: black;
+}
+
+div.posts article h1{
+    font-size: 30px;
+}
